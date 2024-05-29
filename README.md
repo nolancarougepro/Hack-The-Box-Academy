@@ -1,4 +1,4 @@
-﻿# Hack-The-Box-Academy
+# Hack-The-Box-Academy
  
 ![Hack The Box](https://www.hackthebox.eu/images/logo-htb.svg)
  
@@ -12,15 +12,15 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
 - **[Tier 0](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200)**
   - [Fundamental](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Fundamental)
     - Getting Started
-    - Intro To Academy
+    - Intro To Academy (✓)
     - Introduction To Active Directory
     - Introduction To Networking
     - Introduction To Web Applications
-    - Learning Process
-    - Linux Fundamentals
+    - Learning Process (✓)
+    - Linux Fundamentals (✓)
     - Macos Fundamentals
     - Setting Up
-    - Web Request
+    - Web Request (✓)
     - Windows Fundamentals
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Easy)
     - Attacking Web Applications with Ffuf
