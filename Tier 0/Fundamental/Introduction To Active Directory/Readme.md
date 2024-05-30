@@ -2,9 +2,10 @@
 
 A basic AD user account with no added privileges can be used to enumerate the majority of objects contained within AD, including but not limited to:
 
-![[Domain.png]]
-![[TreeAD.png]]![[AD.png]]
-![[ADForestandDomain.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/Domain.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/TreeAD.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/AD.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/ADForestandDomain.png)
 
 ## Active Directory Terminology : 
 #### Object : 
@@ -45,25 +46,27 @@ Does not contain any other objects. Can be found at the end of the subtree hiera
 A [GUID](https://docs.microsoft.com/en-us/windows/win32/adschema/a-objectguid) is a unique 128-bit value assigned when a domain user or group is created. Every single object created by Active Directory is assigned a GUID, not only user and group objects.
 
 
-![[dn_rdn2.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/dn_rdn2.webp)
 
 ## Active Directory Objects : 
 
-![[adobjects.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/adobjects.webp)
 
 ## Active Directory Functionality :
 
-![[RolesMaster.png]]![[TrustType.png]]![[trusts-diagram.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/RolesMaster.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/TrustType.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/trusts-diagram.webp)
 
 ## Kerberos, DNS, LDAP, MSRPC : 
 
 ### Kerberos (Port 88 both TCP and UDP): 
 
-![[Kerb_auth.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/Kerb_auth.webp)
 
 ### DNS : 
 
-![[dns_highlevel.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/dns_highlevel.webp)
 
 Command to find the DNS name or get the IP address of a server :
 ```powershell-session
@@ -72,7 +75,7 @@ nslookup 172.16.6.5
 
 ### LDAP : 
 
-![[LDAP_auth.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/LDAP_auth.webp)
 
 Comparison between AD and LDAP / Apache and HTTP.
 2 Types of authentication:
@@ -85,12 +88,13 @@ This includes anonymous authentication, unauthenticated authentication, and user
 
 ### MSRPC : 
 
-![[MSRCP.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/MSRCP.png)
 
 ## NTLM Authentication : 
 
-![[HashProtocol.png]]![[ntlm_auth.webp]]
-![[NTLM Auth.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/HashProtocol.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/ntlm_auth.webp)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/NTLM%20Auth.png)
 
 ```shell-session
 NolanCarougeHTB@htb[/htb]$ crackmapexec smb 10.129.41.19 -u rachel -H e46b9e548fa0d122de7f59fb6d48eaa2
@@ -101,7 +105,10 @@ SMB         10.129.43.9     445    DC01      [+] INLANEFREIGHT.LOCAL\rachel:e46b
 
 ## Active Directory Rights and Privileges : 
 
-![[GroupName1.png]]![[GroupName2.png]]![[GroupName3.png]]![[Privilege.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/GroupName1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/GroupName2.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/GroupName3.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/Privilege.png)
 
 List user privileges :
 ```powershell-session
@@ -110,7 +117,8 @@ whoami /priv
 
 ## Security in Active Directory :
 
-![[CIA-triad-diag.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/CIA-triad-diag.webp)
 
 ## Examining Group Policy : 
-![[HTB Academy/Tier 0/Fundamental/INTRODUCTION TO ACTIVE DIRECTORY/Images/Policy.png]]![[gpo_levels.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/Policy.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Active%20Directory/Images/gpo_levels.webp)
