@@ -7,8 +7,10 @@
 
 ## Graphical User Interface : 
 
-![[GUI.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Macos%20Fundamentals/Images/GUI.png)
 
 ## System Hierarchy : 
 
-![[D3.webp]]![[Pasted image 20240215192350.png]]![[D1.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Macos%20Fundamentals/Images/D3.webp)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Macos%20Fundamentals/Images/Domain.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Macos%20Fundamentals/Images/D1.webp)
