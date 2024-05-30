@@ -1,21 +1,25 @@
 ## Introduction : 
 
-![[Intro.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Intro.png)
 
 ## Web Application Layout : 
 
-![[one-server-arch.jpg]]![[client-server-model.jpg]]![[many-server-one-db-arch.jpg]]![[many-server-many-db-arch.jpg]]![[many-server-one-db-arch.jpg]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/one-server-arch.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/client-server-model.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/many-server-one-db-arch.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/many-server-many-db-arch.jpg)
 
 ## Front End vs. Back End : 
 
-![[frontend-components.jpg]]
-![[backend-server.jpg]]
-![[Mistake1.png]]![[Mistake2.png]]
-![[Vulnerability.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/frontend-components.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/backend-server.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Mistake1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Mistake2.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Vulnerability.png)
 
 ## HTML : 
 
-![[Encoding Char.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Encoding%20Char.png)
 
 ## JavaScript : 
 # Sensitive Data Exposure : 
@@ -29,7 +33,7 @@ If no input sanitization is in place, this is potentially an easy target for `H
 
 XSS vulnerabilities are a type of HTML Injection, for XSS it is JavaScript code injection. There are several types of XSS.
 
-![[XSS Types.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/XSS%20Types.png)
 
 DOM XSS JavaScript : 
 ```javascript
@@ -37,10 +41,10 @@ DOM XSS JavaScript :
 ```
 
 ## Cross-Site Request Forgery (CSRF) : 
-![[CSRF.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/CSRF.png)
 How to protect yourself from attacks?
 
-![[Prevent.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Prevent.png)
 
 ## Back End Servers : 
 
@@ -49,11 +53,12 @@ The back end server contains the other 3 back end components :
 - `Database`
 - `Development Framework`
 
-![[Servers Type.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Servers%20Type.png)
 
 ## Web Servers : 
 
-![[Code1.png]]![[Code2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Code1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/Code2.png)
 
 Apache (Apple, Adobe, Baidu).
 Nginx (Google, Facebook, X, Cisco, Intel ...).
@@ -63,13 +68,13 @@ IIS (Microsoft, Office365, Skype, StackOverflow ...).
 
 Relational (SQL) : 
 
-![[web_apps_relational_db.jpg]]
-![[SQLType.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/web_apps_relational_db.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/SQLType.png)
 
 Non-relational (NoSQL) : (stores data in JSON or XML)
 
-![[web_apps_non-relational_db.jpg]]
-![[NoSQLType.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/web_apps_non-relational_db.jpg)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/NoSQLType.png)
 
 ## Development Frameworks & APIs : 
 
@@ -87,4 +92,4 @@ Non-relational (NoSQL) : (stores data in JSON or XML)
 
 ## Public Vulnerabilities : 
 
-![[CVSS.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Web%20Applications/Images/CVSS.png)
