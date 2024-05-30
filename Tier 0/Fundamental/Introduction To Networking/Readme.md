@@ -1,16 +1,24 @@
 ## Networking Overview : 
 
-![[net_overview.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/net_overview.png)
 
 ## Network Types : 
 
-![[Network Types 1.png]]![[Network Types 2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Network%20Types%201.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Network%20Types%202.png)
 
 ## Networking Topologies : 
 
-![[Connections.png]]![[Nodes.png]]
-![[PointToPoint.png]]![[Bus.png]]
-![[Star.png]]![[Ring.png]]![[Mesh.png]]![[Tree.png]]![[Hybrid.png]]![[DaisyChain.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Connections.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Nodes.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/PointToPoint.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Bus.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Star.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Ring.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Mesh.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Tree.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Hybrid.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/DaisyChain.png)
 
 ## Proxies : 
 
@@ -18,29 +26,30 @@ A proxy is when a device or service sits in the middle of a connection and acts 
 
 Several types of proxy :
 - `Dedicated Proxy` / `Forward Proxy` : 
-![[ForwardProxy.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/ForwardProxy.png)
 
 - `Reverse Proxy` : 
-![[ReverseProxy.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/ReverseProxy.png)
 
 - `Transparent Proxy` : 
 With a `transparent proxy`, the client doesn't know about its existence.
 
 ## Networking Models : 
 
-![[OSI.png]]![[Packet Transfer.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/OSI.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Packet%20Transfer.png)
 
 ## The OSI Model : 
 
-![[OSIModel.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/OSIModel.png)
 
 ## The TCP/IP Model : 
 
-![[TCPIP.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TCPIP.png)
 
 The most important tasks of TCP/IP are :
 
-![[RolesTCP.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/RolesTCP.png)
 
 ## Network Layer : 
 
@@ -66,14 +75,16 @@ Each machine has a MAC address, they allow communication on a local network. To 
 An IPv4 address is made up of 32 bits (4 bytes ranging from 0 to 255).
 It is possible to have 4,294,967,296 unique addresses.
 
-![[Ipv4.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Ipv4.png)
 2 reserved addresses. The one for the network address and the other for the broadcast.
 
 ## Subnetting : 
 
-![[Networtk Part.png]]
-![[Host Part.png]]
-![[Network Adress.png]]![[Broadcast Adress.png]]![[Hosts.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Networtk%20Part.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Host%20Part.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Network%20Adress.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Broadcast%20Adress.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Hosts.png)
 
 ## MAC Addresses : 
 
@@ -86,11 +97,12 @@ MAC address :
 The first half (`3 bytes` / `24 bit`) is the so-called `Organization Unique Identifier` (`OUI`) defined by the `Institute of Electrical and Electronics Engineers` (`IEEE`) for the respective manufacturers. 
 The last half of the MAC address is called the `Individual Address Part` or `Network Interface Controller` (`NIC`), which the manufacturers assign. The manufacturer sets this bit sequence only once and thus ensures that the complete address is unique.
 
-![[Local Range Mac.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Local%20Range%20Mac.png)
 The last bit identifies the MAC address as `Unicast` (`0`) or `Multicast` (`1`). With `unicast`, it means that the packet sent will reach only one specific host.
 
-![[MAC Unicast.png]]![[MacMulti Broad.png]]
-![[Global Locally.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/MAC%20Unicast.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/MacMulti%20Broad.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Global%20Locally.png)
 
 - `MAC spoofing`: This involves altering the MAC address of a device to match that of another device, typically to gain unauthorized access to a network.
 
@@ -110,40 +122,43 @@ Successor to IPv4. An IPv6 is 128 bits long. The prefix identifies the host and 
 - End-to-end encryption (IPsec)
 - Data packages up to 4 GByte
 
-![[IPv6.png]]
-![[TypesIPv6.png]]![[FormatIPv6.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/IPv6.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TypesIPv6.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/FormatIPv6.png)
 
 ## Networking Key Terminology : 
 
-![[Protocols1.png]]
-![[Protocols4.png]]![[Protocols5.png]]![[Protocols3.png]]
-![[Protocols2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Protocols1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Protocols4.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Protocols5.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Protocols3.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Protocols2.png)
 
 ## Common Protocols : 
 ### Transmission Control Protocol :
 
 With connection. TCP is therefore more reliable but slower than UDP.
 
-![[ThreeWayHandshake.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/ThreeWayHandshake.png)
 
-![[TCPProt1.png]]
-![[TCPProt3.png]]
-![[TCPProt2.png]]
-![[TCPProt4.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TCPProt1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TCPProt3.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TCPProt2.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/TCPProt4.png)
 
 ### User Datagram Protocol : 
 
 Without connection. No verification that the message is received. UDP is therefore faster than TCP but less reliable.
 
-![[UDP1.png]]
-![[UDP2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/UDP1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/UDP2.png)
 
 ### ICMP : 
 
 ICMP is a protocol used by devices to communicate with each other over the Internet for several reasons including error reporting and status information. For example the **ping** request. The most used version of ICMP is ICMPv4 (there is ICMPv6 for IPv6 addresses only). There is a TTL field in the packet header which limits the lifetime of the packet (to prevent the packet from going around in circles).
 
-![[ICMP Request.png]]
-![[ICMP Message.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/ICMP%20Request.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/ICMP%20Message.png)
 
 ### VoIP : 
 
@@ -151,7 +166,7 @@ Method used to transmit voice. Used in particular for Skype, WhatsApp, Google Ha
 
 The most used SIP methods and requests:
 
-![[Sip method.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Sip%20method.png)
 
 ## Wireless Networks :
 
@@ -160,7 +175,8 @@ The [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11) protocol defines th
 
 The different fields of the Connection request frame:
 
-![[RequestFrame.png]]![[Etablissement Connection.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/RequestFrame.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Etablissement%20Connection.png)
 
 Main security in WiFi: 
 - Encryption
@@ -174,7 +190,7 @@ WPA: Uses AES with a 128-bit key.
 
 VPN typically uses the ports `TCP/1723` for [Point-to-Point Tunneling Protocol](https://www.lifewire.com/pptp-point-to-point-tunneling-protocol-818182) `PPTP` VPN connections and `UDP/500` for [IKEv1](https://www.cisco.com/c/en/us/support/docs/security-vpn/ipsec-negotiation-ike-protocols/217432-understand-ipsec-ikev1-protocol.html) and [IKEv2](https://nordvpn.com/blog/ikev2ipsec/) VPN connections.
 
-![[VPN.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/VPN.png)
 
 ### IPsec : 
 
@@ -185,7 +201,8 @@ Protocol that encrypts and authenticates internet communications.
 
 2 operating modes:
 
-![[IPSec.png]]![[Exemple IPSEc.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/IPSec.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Exemple%20IPSEc.png)
 
 ## Vendor Specific Information : 
 
@@ -196,16 +213,16 @@ Cisco IOS for routers and switches (Cisco brand). It offers several features:
 - Virtualization features such as Virtual Private LAN Service (VPLS)
 - Virtual Routing and Forwarding (VRF)
 Either from the command line (CLI) or with a graphical interface (GUI). It supports several network protocols including :
-![[Ciscoios.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Ciscoios.png)
 
 Cisco passwords :
-![[Motsdepasse Cisco.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Motsdepasse%20Cisco.png)
 
 ### VLANs : 
 
 Network group connected to a switch.
 
-![[VLAN.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/VLAN.png)
 
 The benefits include :
 - `Better Organization`: Network administrators can group endpoints based on any common attribute they share.
@@ -215,17 +232,18 @@ The benefits include :
 
 ## Key Exchange Mechanisms :
 
-![[AlgoChiffre.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/AlgoChiffre.png)
 
 ## Authentication Protocols :
 
-![[AuthProt1.png]]![[AuthProt2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/AuthProt1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/AuthProt2.png)
 
 ## TCP/UDP Connections : 
 
 Header d'un paquet IP : 
 
-![[IP header.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/IP%20header.png)
 
 ## Cryptography : 
 
@@ -234,4 +252,4 @@ Asymétrique (clé privé et publique) : RSA, PGP, ECC
 
 Cipher Mode : 
 
-![[Cipher Mode.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Introduction%20To%20Networking/Images/Cipher%20Mode.png)
