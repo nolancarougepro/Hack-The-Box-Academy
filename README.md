@@ -11,17 +11,17 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
 ## Modules
 - **[Tier 0](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200)**
   - [Fundamental](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Fundamental)
-    - Getting Started
+    - Getting Started (✓)
     - Intro To Academy (✓)
-    - Introduction To Active Directory
-    - Introduction To Networking
-    - Introduction To Web Applications
+    - Introduction To Active Directory (✓)
+    - Introduction To Networking (✓)
+    - Introduction To Web Applications (✓)
     - Learning Process (✓)
     - Linux Fundamentals (✓)
-    - Macos Fundamentals
-    - Setting Up
+    - Macos Fundamentals (✓)
+    - Setting Up (✓)
     - Web Request (✓)
-    - Windows Fundamentals
+    - Windows Fundamentals (✓)
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Easy)
     - Attacking Web Applications with Ffuf
     - JavaScript Deobfuscation
