@@ -1,6 +1,6 @@
 ## Introduction to Windows : 
 
-![[Windows Version.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Windows%20Version.png)
 
 To retrieve the Build number and System Version :
 ```powershell-session
@@ -14,8 +14,8 @@ xfreerdp /v:<targetIp> /u:htb-student /p:Password
 
 ## Operating System Structure : 
 
-![[Dir1.png]]
-![[Dir2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Dir1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Dir2.png)
 
 This command lists the files present at the root.
 ```cmd-session
@@ -48,15 +48,15 @@ NTFS (default with Windows):
 - Older devices do not also support NTFS.
 
 Some permissions with NTFS:
-![[Permission NTFS.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Permission%20NTFS.png)
 
 This command allows you to list the files and associated rights.
 ```cmd-session
 icacls c:\windows
 ```
 
-![[Type Droits.png]]
-![[Droits.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Type%20Droits.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Droits.png)
 
 This command gives full control of the directory to Joe.
 ```cmd-session
@@ -65,7 +65,11 @@ icacls c:\users /grant joe:f
 
 ## NTFS vs. Share Permissions : 
 
-![[File Sharing Using SMB.png]]![[Share perm.png]]![[NTFS Basic.png]]![[NTFS  Special 1.png]]![[NTFS Special 2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/File%20Sharing%20Using%20SMB.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Share%20perm.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/NTFS%20Basic.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/NTFS%20Special%201.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/NTFS%20Special%202.png)
 
 Files created in a folder inherit the permissions of the parent folder by default.
 
@@ -101,7 +105,7 @@ Get-Service | ? {$_.Status -eq "Running"} | fl
 ```
 
 Services that cannot be stopped or restarted :
-![[Services non stop.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Services%20non%20stop.png)
 
 ## Service Permissions : 
 
@@ -117,17 +121,17 @@ sc config wuauserv binPath=C:\Winbows\Perfectlylegitprogram.exe
 
 ## Windows Sessions : 
 
-![[Account.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Account.png)
 
 ## Interacting with the Windows Operating System : 
 
-![[HTB Academy/Tier 0/Fundamental/WINDOWS FUNDAMENTALS/Images/Policy.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Policy.png)
 
 ## Windows Management Instrumentation (WMI) : 
 
 WMI is a Windows internal management system that supports monitoring and control of system resources through a set of interfaces.
 
-![[VMI.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/VMI.png)
 
 Some of the uses for WMI are :
 - Status information for local/remote systems.
@@ -161,9 +165,11 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ## Desktop Experience vs. Server Core :
 
-![[Server.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/Server.png)
 
 ## Windows Security
 
-![[SID.png]]![[uacarchitecture1.png]]
-![[REG1.png]]![[REG2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/SID.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/uacarchitecture1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/REG1.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Fundamental/Windows%20Fundamentals/Images/REG2.png)
