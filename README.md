@@ -23,10 +23,10 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
     - Web Request (✓)
     - Windows Fundamentals (✓)
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Easy)
-    - Attacking Web Applications with Ffuf
-    - JavaScript Deobfuscation
-    - Using the Metasploit Framework
-    - Vulnerability Assessment
+    - Attacking Web Applications with Ffuf (✓)
+    - JavaScript Deobfuscation (✓)
+    - Using the Metasploit Framework (✓)
+    - Vulnerability Assessment (✓)
   - [Medium](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Medium)
     - Brief Intro to Hardware Attacks
     - File Inclusion
