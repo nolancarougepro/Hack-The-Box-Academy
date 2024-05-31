@@ -1,6 +1,6 @@
 ## Introduction to Metasploit : 
 
-![[MetasploitProject.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/MetasploitProject.png)
 
 Metasploit Pro : 
 - Task Chains
@@ -10,7 +10,7 @@ Metasploit Pro :
 - Quick Start Wizards
 - Nexpose Integration
 
-![[Uses.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/Uses.png)
 
 ## Introduction to MSFconsole : 
 
@@ -20,7 +20,7 @@ msfconsole
 msfconsole -q (without the banner)
 ```
 
-![[S04_SS03.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/S04_SS03.png)
 
 ## Modules : 
 
@@ -29,7 +29,7 @@ Module syntax :
 <No.> <type>/<os>/<service>/<name>
 ```
 
-![[TypeModule.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/TypeModule.png)
 
 Example search :
 ```shell-session
@@ -50,11 +50,11 @@ msf6 exploit(windows/browser/ie_execcommand_uaf) > show targets
 
 ## Payloads :
 
-![[RHOST.png]]
-![[LHOST.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/RHOST.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/LHOST.png)
 
 Common windows payload : 
-![[Windows common payload.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/Using%20the%20Metasploit%20Framework/Images/Windows%20common%20payload.png)
 
 ## Encoders : 
 
