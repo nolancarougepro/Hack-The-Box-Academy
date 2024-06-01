@@ -1,21 +1,22 @@
 # Introduction : 
 
-![[db_request_3.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/db_request_3.webp)
 
 # Intro to Databases :
 
-![[DBMS.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/DBMS.png)
 
 # Types of Databases :
 
 ## Relational Databases : 
 
-![[HTB Academy/Tier 0/Medium/SQL Injection Fundamentals/Images/web_apps_relational_db.jpg]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/web_apps_relational_db.jpg)
+
 The relationship between tables within a database is called a Schema.
 
 ## Non-relational Databases : 
 
-![[HTB Academy/Tier 0/Medium/SQL Injection Fundamentals/Images/web_apps_non-relational_db.jpg]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/web_apps_non-relational_db.jpg)
 ```json
 {
   "100001": {
@@ -210,17 +211,17 @@ Here is a list of common operations and their precedence, as seen in the [MariaD
 
 Sanitization refers to the removal of any special characters in user-input, in order to break any injection attempts.
 
-![[types_of_sqli.jpg]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/types_of_sqli.jpg)
 # Subverting Query Logic : 
 
-![[Char Encoded.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/Char%20Encoded.png)
 
 ```sql
 SELECT * FROM logins WHERE username='admin' AND password = 'p@ssw0rd';
 SELECT * FROM logins WHERE username='admin' or '1'='1' AND password = 'something';
 ```
 
-![[or_inject_diagram.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/or_inject_diagram.webp)
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#authentication-bypass
 
 # Using Comments : 
@@ -320,7 +321,7 @@ cn' UNION select 1,@@version,3,4-- -
 
 Pour savoir si on a une BD MySQL : 
 
-![[Mysql.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/Mysql.png)
 
 ```sql
 mysql> SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA;
