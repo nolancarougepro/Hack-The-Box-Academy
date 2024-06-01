@@ -41,4 +41,4 @@ The array of risks associated with Bluetooth can be broadly classified into seve
 4. `Denial of Service (DoS)`: Attackers can launch Denial of Service attacks on Bluetooth-enabled devices by overwhelming them with an excessive volume of requests or by exploiting vulnerabilities in Bluetooth protocols. This can result in the targeted device becoming unresponsive, rendering it unable to perform its intended functions.
 5. `Device Tracking`: Bluetooth technology relies on radio signals to establish connections between devices. Attackers can exploit this characteristic to track the physical location of Bluetooth-enabled devices. Such tracking compromises the privacy and security of device owners, potentially leading to stalking or other malicious activities.
 
-![[Attacks.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Brief%20Intro%20to%20Hardware%20Attacks/Images/Attacks.png)
