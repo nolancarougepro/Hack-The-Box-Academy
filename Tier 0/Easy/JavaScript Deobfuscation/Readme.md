@@ -27,7 +27,7 @@ https://obfuscator.io/
 
 For minified Javascript code, on Firefox :
 
-![[js_deobf_pretty_print.jpg]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Easy/JavaScript%20Deobfuscation/Images/js_deobf_pretty_print.jpg)
 
 Or :
 https://prettier.io/playground/
