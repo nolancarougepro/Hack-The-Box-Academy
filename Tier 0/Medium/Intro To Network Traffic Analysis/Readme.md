@@ -80,3 +80,28 @@ For more information on FTP, see `RFC:959`.
 Server Message Block (`SMB`) is a protocol most widely seen in Windows enterprise environments that enables sharing resources between hosts over common networking architectures. SMB is a connection-oriented protocol that requires user authentication from the host to the resource to ensure the user has correct permissions to use that resource or perform actions. In the past, SMB utilized NetBIOS as its transport mechanism over UDP ports 137 and 138. Since modern changes, SMB now supports direct TCP transport over port 445, NetBIOS over TCP port 139, and even the QUIC protocol.
 
 ## The Analysis Process : 
+
+Traffic Analysis is a `detailed examination of an event or process`, determining its origin and impact, which can be used to trigger specific precautions and/or actions to support or prevent future occurrences.
+
+Traffic capturing and analysis can be performed in two different ways, `active` or `passive`. Each has its dependencies. With passive, we are just copying data that we can see without directly interacting with the packets. For active traffic capture and analysis, the needs are a bit different. It  can also be referred to as `in-line` traffic captures. With both, how we analyze the data is up to us.
+
+![[traffic_capture_dependencies.png]]
+
+## Tcpdump Fundamentals : 
+
+`Tcpdump` is a command-line packet sniffer that can directly capture and interpret data frames from a file or network interface.
+
+![[tcp_dump_switch.png]]
+
+## Tcpdump Packet Filtering : 
+
+![[Tcpdump_filter.png]]
+
+## Analysis with Wireshark : 
+
+`Wireshark` is a free and open-source network traffic analyzer much like tcpdump but with a graphical interface.
+
+TShark is a purpose-built terminal tool based on Wireshark. TShark shares many of the same features that are included in Wireshark and even shares syntax and options. TShark is perfect for use on machines with little or no desktop environment and can easily pass the capture information it receives to another tool via the command line.
+
+![[thark_swiches.png]]
+
