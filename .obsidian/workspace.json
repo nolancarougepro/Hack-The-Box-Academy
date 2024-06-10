@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "5507a44e99955294",
+    "type": "split",
+    "children": [
+      {
+        "id": "56ea3292bcfa69ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "792c0a145b2828b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3efa33d8ec923147",
+    "type": "split",
+    "children": [
+      {
+        "id": "8aa50d15aced315f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f3dde8b475765ff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e933ad20475c59e8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f8825feb89b9d7f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 370.5
+  },
+  "right": {
+    "id": "d7c6748e33e43737",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9f5d35f0c891b87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2a50fad4b12db5d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4ca1ff65b2f90afe",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3643cc30f9fe552d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "eabe822135d1d8b4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "792c0a145b2828b0",
+  "lastOpenFiles": [
+    "README.md",
+    "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md",
+    "Tier 0/Medium/SQL Injection Fundamentals/Sql_Injection_Fundamentals_Module_Cheat_Sheet.pdf",
+    "Tier 0/Medium/File Transfers/Readme.md",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Readme.md",
+    "powershell_web_downloads.png",
+    "Tier 0/Medium/File Transfers/Images/fig1a-astaroth-attack-chain.webp",
+    "Tier 0/Medium/File Transfers/Images",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Images/tcp_dump_switch.png",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Intro_To_Network_Traffic_Analysis_Module_Cheat_Sheet.pdf",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Images/thark_swiches.png",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Images/Tcpdump_filter.png",
+    "Tier 0/Medium/Intro To Network Traffic Analysis/Images/traffic_capture_dependencies.png",
+    "Tier 0/Medium/Stack-Based Buffer Overflows on Linux x86/Readme.md",
+    "Tier 0/Medium/Brief Intro to Hardware Attacks/Readme.md",
+    "Tier 0/Medium/SQL Injection Fundamentals/Readme.md",
+    "Tier 0/Medium/SQL Injection Fundamentals/Images/web_apps_relational_db.jpg",
+    "Tier 0/Medium/SQL Injection Fundamentals/Images/web_apps_non-relational_db.jpg",
+    "Tier 0/Medium/SQL Injection Fundamentals/Images/types_of_sqli.jpg",
+    "Tier 0/Medium/SQL Injection Fundamentals/Images/or_inject_diagram.webp",
+    "Tier 0/Medium/SQL Injection Fundamentals/Images",
+    "Tier 0/Medium/Brief Intro to Hardware Attacks/Images",
+    "Tier 0/Easy/Vulnerability Assessment/Readme.md",
+    "Tier 0/Easy/Using the Metasploit Framework/Readme.md",
+    "Tier 0/Easy/JavaScript Deobfuscation/Readme.md",
+    "Tier 0/Easy/JavaScript Deobfuscation/Javascript_Deobfuscation_Module_Cheat_Sheet.pdf",
+    "Tier 0/Easy/Attacking Web Applications with Ffuf/Readme.md",
+    "Tier 0/Easy/Attacking Web Applications with Ffuf/Attacking_Web_Applications_With_Ffuf_Module_Cheat_Sheet.pdf",
+    "Tier 0/Easy/Vulnerability Assessment/Images",
+    "Tier 0/Easy/Vulnerability Assessment/Vulnerability Assessment.md",
+    "Tier 0/Easy/Using the Metasploit Framework/Using the Metasploit Framework.md",
+    "Tier 0/Easy/Using the Metasploit Framework/Images",
+    "Tier 0/Easy/JavaScript Deobfuscation/JavaScript Deobfuscation.md",
+    "Tier 0/Easy/JavaScript Deobfuscation/Images",
+    "Tier 0/Easy/Attacking Web Applications with Ffuf/Attacking Web Applications with Ffuf.md",
+    "Tier 0/Fundamental/Introduction To Active Directory/Readme.md",
+    "Tier 0/Fundamental/Windows Fundamentals/Readme.md",
+    "HTB Academy/Tier 0/Fundamental/WINDOWS FUNDAMENTALS/Images/Policy.png.md",
+    "Tier 0/Fundamental/Getting Started/Readme.md",
+    "Tier 0/Fundamental/Windows Fundamentals/WINDOWS FUNDAMENTALS.md",
+    "Tier 0/Fundamental/Introduction To Active Directory/INTRODUCTION TO ACTIVE DIRECTORY.md",
+    "Tier 0/Fundamental/Getting Started/GETTING STARTED.md",
+    "Tier 0/Fundamental/Introduction To Web Applications/Readme.md",
+    "Tier 0/Fundamental/Introduction To Web Applications/INTRODUCTION TO WEB APPLICATIONS.md",
+    "Tier 0/Fundamental/Macos Fundamentals/Readme.md"
+  ]
+}
