@@ -22,7 +22,7 @@ The architecture of the `Von-Neumann` was developed by the Hungarian mathematici
 - `Arithmetical Logical Unit`
 - `Input/Output Unit`
 
-![[von_neumann3.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/von_neumann3.webp)
 
 There are four different types of `ISA`:
 - `CISC` - `Complex Instruction Set Computing`
@@ -30,11 +30,11 @@ There are four different types of `ISA`:
 - `VLIW` - `Very Long Instruction Word`
 - `EPIC` - `Explicitly Parallel Instruction Computing`
 
-![[Instruction.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/Instruction.png)
 
 ## Stack-Based Buffer Overflow : 
 
-![[buffer_overflow_1.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_1.webp)
 #### .text
 The `.text` section contains the actual assembler instructions of the program. This area can be read-only to prevent the process from accidentally modifying its instructions. Any attempt to write to this area will inevitably result in a segmentation fault.
 #### .data
@@ -63,13 +63,13 @@ root@nix-bow:/home/student# echo 0 > /proc/sys/kernel/randomize_va_space
 
 ## CPU Registers : 
 
-![[Registers.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/Registers.png)
 
 ## Take Control of EIP : 
 
 One of the most important aspects of a stack-based buffer overflow is to get the `instruction pointer` (`EIP`) under control, so we can tell it to which address it should jump. This will make the `EIP` point to the address where our `shellcode` starts and causes the CPU to execute it.
 
-![[buffer_overflow_2.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_2.webp)
 
 ```
 (gdb) run $(python -c "print 'Aa0Aa1Aa2Aa3Aa4Aa5...<SNIP>...Bn6Bn7Bn8Bn9'") 
@@ -82,7 +82,8 @@ One of the most important aspects of a stack-based buffer overflow is to get the
 info registers
 ```
 
-![[buffer_overflow_3.webp]]![[buffer_overflow_4.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_3.webp)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_4.webp)
 
 ## Determine the Length for Shellcode :
 
@@ -101,7 +102,8 @@ Let us briefly summarize what we need for this:
 2. Here, we can use an additional `100 bytes` of `NOPs`
 3. `150 bytes` for our `shellcode`.
 
-![[buffer_overflow_8.webp]]![[buffer_overflow_7.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_8.webp)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_7.webp)
 
 # Identification of Bad Characters :
 
@@ -128,7 +130,7 @@ info proc all
 
 After checking that we still control the EIP with our shellcode, we now need a memory address where our NOPs are located to tell the EIP to jump to it. This memory address must not contain any of the bad characters we found previously.
 
-![[buffer_overflow_9.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Linux%20x86/Images/buffer_overflow_9.webp)
 
 ## Prevention Techniques and Mechanisms : 
 

@@ -2,15 +2,15 @@
 
 `Network Traffic Analysis (NTA)` can be described as the act of examining network traffic to characterize common ports and protocols utilized.
 
-![[use_cases.png]]
-![[tools.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/use_cases.png)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/tools.png)
 
 ## Networking Primer - Layers 1-4 :
 
 Quick refresher on networking (cf [Introduction to Networking](https://academy.hackthebox.com/course/preview/introduction-to-networking)).
 
-![[net_models_pdu2.webp]]
-![[pdu-wireshark.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/net_models_pdu2.webp)
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/pdu-wireshark.webp)
 
 ### MAC-Addressing :
 
@@ -31,10 +31,10 @@ IPv6 provides us a much larger address space that can be utilized for any networ
 Along with a much larger address space, IPv6 provides: Better support for Multicasting (sending traffic from one to many) Global addressing per device Security within the protocol in the form of IPSec Simplified Packet headers allow for easier processing and move from connection to connection without being re-assigned an address.
 
 IPv6 Addressing Types :
-![[addressing_type.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/addressing_type.png)
 
 TCP vs UDP :
-![[TCPUDP.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/TCPUDP.png)
 
 One of the ways TCP ensures the delivery of data from server to client is the utilization of sessions. These sessions are established through what is called a three-way handshake. To make this happen, TCP utilizes an option in the TCP header called flags : SYN, SYN/ACK, ACK. 
 Before session termination, we should see a packet pattern of : FIN/ACK, FIN/ACK, ACK.
@@ -47,7 +47,7 @@ Hypertext Transfer Protocol (`HTTP`) is a stateless Application Layer protocol t
 
 #### HTTP Methods : 
 
-![[methods.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/methods.png)
 
 ### HTTPS : 
 
@@ -71,7 +71,7 @@ FTP uses ports 20 and 21 over TCP. Port 20 is used for data transfer, while port
 FTP is capable of running in two different modes, `active` or `passive`. Active is the default operational method utilized by FTP, meaning that the server listens for a control command `PORT` from the client, stating what port to use for data transfer. Passive mode enables us to access FTP servers located behind firewalls or a NAT-enabled link that makes direct TCP connections impossible.
 
 FTP Commands : 
-![[FTPcommand.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/FTPcommand.png)
 
 For more information on FTP, see `RFC:959`.
 
@@ -85,17 +85,17 @@ Traffic Analysis is a `detailed examination of an event or process`, determining
 
 Traffic capturing and analysis can be performed in two different ways, `active` or `passive`. Each has its dependencies. With passive, we are just copying data that we can see without directly interacting with the packets. For active traffic capture and analysis, the needs are a bit different. It  can also be referred to as `in-line` traffic captures. With both, how we analyze the data is up to us.
 
-![[traffic_capture_dependencies.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/traffic_capture_dependencies.png)
 
 ## Tcpdump Fundamentals : 
 
 `Tcpdump` is a command-line packet sniffer that can directly capture and interpret data frames from a file or network interface.
 
-![[tcp_dump_switch.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/tcp_dump_switch.png)
 
 ## Tcpdump Packet Filtering : 
 
-![[Tcpdump_filter.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/Tcpdump_filter.png)
 
 ## Analysis with Wireshark : 
 
@@ -103,5 +103,5 @@ Traffic capturing and analysis can be performed in two different ways, `active` 
 
 TShark is a purpose-built terminal tool based on Wireshark. TShark shares many of the same features that are included in Wireshark and even shares syntax and options. TShark is perfect for use on machines with little or no desktop environment and can easily pass the capture information it receives to another tool via the command line.
 
-![[thark_swiches.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Intro%20To%20Network%20Traffic%20Analysis/Images/thark_swiches.png)
 
