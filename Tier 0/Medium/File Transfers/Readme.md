@@ -2,7 +2,7 @@
 
 This is an excellent example of multiple methods for file transfer and the threat actor using those methods to bypass defenses.
 
-![[fig1a-astaroth-attack-chain.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/File%20Transfers/Images/fig1a-astaroth-attack-chain.webp)
 
 ### Download Operations :
 
@@ -29,7 +29,7 @@ PS C:\htb> Get-FileHash C:\Users\Public\id_rsa -Algorithm md5
 
 #### PowerShell Web Downloads : 
 
-![[powershell_web_downloads.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/File%20Transfers/Images/powershell_web_downloads.png)
 
 We can specify the class name `Net.WebClient` and the method `DownloadFile` with the parameters corresponding to the URL of the target file to download and the output file name.
 
