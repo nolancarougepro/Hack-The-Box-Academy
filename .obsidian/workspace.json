@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1502dc7b06103b28",
+        "id": "c2af9acb68ee2840",
         "type": "tabs",
         "children": [
           {
-            "id": "91cb368bcfea4afb",
+            "id": "ed9a14a074b3c6d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tier 1/Fundamental/Penetration Testing Process/Readme.md"
+                "file": "README.md"
               }
             }
           }
@@ -147,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f3dde8b475765ff",
+  "active": "ed9a14a074b3c6d6",
   "lastOpenFiles": [
+    "Tier 1/Easy/Introduction to Python 3/Readme.md",
+    "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
+    "Tier 1/Easy/Introduction to Python 3/Images",
     "priority.png",
     "analysis_type.png",
     "rules_of_engagment.png",
@@ -156,12 +159,10 @@
     "Tier 1/Fundamental/Penetration Testing Process/Images/NDA.png",
     "Tier 1/Fundamental/Penetration Testing Process/Images/stages.png",
     "README.md",
-    "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
     "Tier 1/Fundamental/Penetration Testing Process/Images/precautionary.png",
     "Tier 1/Fundamental/Penetration Testing Process/Images/laws.png",
     "Tier 1/Fundamental/Penetration Testing Process/Images/types_pentest.png",
     "Tier 1/Fundamental/Penetration Testing Process/Images/path_3.png",
-    "Tier 1/Fundamental/Penetration Testing Process/Images/path_5.png",
     "Tier 1/Fundamental/Penetration Testing Process/Images",
     "Tier 1/Fundamental/Penetration Testing Process/Nouveau dossier",
     "Tier 1/Fundamental/Penetration Testing Process/Nouveau raccourci.lnk",
@@ -179,7 +180,6 @@
     "Tier 0/Medium/SQL Injection Fundamentals/README.md",
     "Tier 0/Medium/File Transfers/File_Transfers_Module_Cheat_Sheet.pdf",
     "Tier 0/Medium/SQL Injection Fundamentals/SQL Injection Fundamentals.md",
-    "Tier 0/Medium/SQL Injection Fundamentals/Sql_Injection_Fundamentals_Module_Cheat_Sheet.pdf",
     "Tier 0/Medium/Intro To Network Traffic Analysis/Readme.md",
     "Tier 0/Medium/Stack-Based Buffer Overflows on Linux x86/Readme.md",
     "Tier 0/Medium/Brief Intro to Hardware Attacks/Readme.md",

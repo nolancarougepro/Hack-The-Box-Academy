@@ -43,7 +43,7 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
     - Bug Bounty Hunting Process
     - Introduction to Bash Scripting
     - Introduction to C#
-    - Introduction to Python 3
+    - Introduction to Python 3 (✓)
     - Introduction to Windows Command Line
     - Network Enumeration with Nmap
     - Security Incident Reporting
