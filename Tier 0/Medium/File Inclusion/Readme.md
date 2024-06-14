@@ -58,7 +58,7 @@ app.get("/about/:language", function(req, res) {
 
 The most important thing to keep in mind is that `some of the above functions only read the content of the specified files, while others also execute the specified files`.
 
-![[readexecute.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/File%20Inclusion/Images/readexecute.png)
 
 ## Local File Inclusion (LFI) : 
 
