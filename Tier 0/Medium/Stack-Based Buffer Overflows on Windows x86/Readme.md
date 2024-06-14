@@ -4,11 +4,11 @@ Buffer Overflows are the most common type of binary exploitation, but other type
 
 The stack has a Last-in, First-out (LIFO) design, which means we can only `pop` out the last element `push`ed into the stack.
 
-![[ex_stack.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Windows%20x86/Images/ex_stack.png)
 
 As we can see, when we send a string that is longer than expected, it overwrites other existing values on the stack and would even overwrite the entire stack if it is long enough. Most importantly, we see that it overwrote the value at `EIP`, and when the function tries to return to this address, the program will crash since this address '`0x6789`' does not exist in memory.
 
-![[ex_stack_push.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Windows%20x86/Images/ex_stack_push.png)
 
 Whenever a function is called, a new stack frame is created, and the old `EIP` address gets pushed to the top of the new stack frame, so the program knows where to return once the function is finished.
 
@@ -28,7 +28,7 @@ For stack-based buffer overflow exploitation, we usually follow five main steps 
 
 Usually, the first step in any binary vulnerability exercise is fuzzing various parameters and any other input the program accepts to see whether our input can cause the application to crash.
 
-![[Input_fields.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Windows%20x86/Images/Input_fields.png)
 
 These are the main parameters we usually fuzz, but many other parameters may be exploitable as well.
 
@@ -175,7 +175,7 @@ def exploit():
 
 In the previous section, we've found multiple return addresses that can work in executing any shellcode we write on the stack:
 
-![[esp_jmpesp.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%200/Medium/Stack-Based%20Buffer%20Overflows%20on%20Windows%20x86/Images/esp_jmpesp.png)
 
 ```python
 def exploit():
