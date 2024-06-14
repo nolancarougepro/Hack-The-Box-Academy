@@ -4,29 +4,29 @@ We are highly skilled, and great trust is placed in us. Do not abuse this trust,
 
 ## Academy Modules Layout :
 
-![[0-PT-Process.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/0-PT-Process.webp)
 
 - The pre-engagement stage is where the main commitments, tasks, scope, limitations, and related agreements are documented in writing.
 - Information gathering is an essential part of any assessment. Because information, the knowledge gained from it, the conclusions we draw, and the steps we take are based on the information available.
 - The vulnerability assessment stage is divided into two areas. On the one hand, it is an approach to scan for known vulnerabilities using automated tools. On the other hand, it is analyzing for potential vulnerabilities through the information found. From this stage, there are four paths we can take, depending on how far we have come :
 
-![[path.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/path.png)
 
 - Exploitation is the attack performed against a system or application based on the potential vulnerability discovered during our information gathering and enumeration. From this stage, there are four paths we can take, depending on how far we have come :
 
-![[path_2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/path_2.png)
 
 - In most cases, when we exploit certain services for our purposes to gain access to the system, we usually do not obtain the highest possible privileges. Bypassing these restrictions is the next step we take in this stage. From this stage, there are four paths we can take, depending on how far we have come :
 
-![[path_3.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/path_3.png)
 
 - Lateral movement is one of the essential components for moving through a corporate network. We can use it to overlap with other internal hosts and further escalate our privileges within the current subnet or another part of the network. There are three paths we can take from this stage :
 
-![[path_4.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/path_4.png)
 
 -  The `Proof-Of-Concept` (`POC`) is merely proof that a vulnerability found exists. From this stage, there is only one path we can take :
 
-![[path_5.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/path_5.png)
 
 - The `Post-Engagement` stage also includes cleaning up the systems we exploit so that none of these systems can be exploited using our tools.
 
@@ -48,15 +48,15 @@ Many pentests are performed from an external perspective or as an anonymous user
 
 An internal pentest is when we perform testing from within the corporate network.
 
-![[types_pentest.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/types_pentest.png)
 
 ## Laws and Regulations : 
 
 Each country has specific federal laws which regulate computer-related activities, copyright protection, interception of electronic communications, use and disclosure of protected health information, and collection of personal information from children, respectively. It is essential to follow these laws to protect individuals from `unauthorized access` and `exploitation of their data` and to ensure their privacy.
 
-![[laws.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/laws.png)
 
-![[precautionary.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/precautionary.png)
 
 ## Penetration Testing Process : 
 
@@ -64,7 +64,7 @@ Each country has specific federal laws which regulate computer-related activitie
 
 Here is the various stage for a pentest (cf Academy Modules Layout) :
 
-![[stages.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/stages.png)
 
 ## Pre-Engagement : 
 
@@ -78,11 +78,11 @@ Pre-engagement is the stage of preparation for the actual penetration test. The 
 
 Before any of these can be discussed in detail, a `Non-Disclosure Agreement` (`NDA`) must be signed by all parties. There are several types of NDAs : 
 
-![[NDA.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/NDA.png)
 
 Here is a list of the documents needed before, duri ng and after the pentest : 
 
-![[Documents.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/Documents.png)
 
 After initial contact is made with the client, we typically send them a `Scoping Questionnaire` to better understand the services they are seeking.
 
@@ -94,7 +94,7 @@ Finally, we will want to ask about information disclosure and evasiveness (if ap
 
 Based on the `Contract Checklist` and the input information shared in scoping, the `Penetration Testing Proposal` (`Contract`) and the associated `Rules of Engagement` (`RoE`) are created.
 
-![[rules_of_engagment.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/rules_of_engagment.png)
 
 ## Information Gathering : 
 
@@ -123,7 +123,7 @@ During the `vulnerability assessment` phase, we examine and analyze the informat
 
 `An analysis is a detailed examination of an event or process, describing its origin and impact, that with the help of certain precautions and actions, can be triggered to support or prevent future occurrences.`
 
-![[analysis_type.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/analysis_type.png)
 
 `Information Gathering` and `Vulnerability Research` can be considered a part of descriptive analysis. `Vulnerability Research`, we look for known vulnerabilities, exploits, and security holes that have already been discovered and reported. We can find vulnerability disclosures for each component using many different sources. These include, but are not limited to :
 
@@ -151,7 +151,7 @@ First, we need to assess the `probability of successfully` executing a particula
 
 Priozitization Example : 
 
-![[priority.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Penetration%20Testing%20Process/Images/priority.png)
 
 ## Post-Exploitation : 
 
