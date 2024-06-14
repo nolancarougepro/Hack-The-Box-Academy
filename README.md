@@ -29,16 +29,16 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
     - Vulnerability Assessment (✓)
   - [Medium](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%200/Medium)
     - Brief Intro to Hardware Attacks (✓)
-    - File Inclusion
-    - File Transfers
+    - File Inclusion (✓)
+    - File Transfers (✓)
     - Intro To Network Traffic Analysis (✓)
     - SQL Injection Fundamentals (✓)
     - Stack-Based Buffer Overflows on Linux x86 (✓)
-    - Stack-Based Buffer Overflows on Windows x86
+    - Stack-Based Buffer Overflows on Windows x86 (✓)
 - **[Tier 1](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201)**
   - [Fundamental](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201/Fundamental)
-    - Incident Handling Process
-    - Penetration Testing Process
+    - Incident Handling Process (✓)
+    - Penetration Testing Process (✓)
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201/Easy)
     - Bug Bounty Hunting Process
     - Introduction to Bash Scripting
