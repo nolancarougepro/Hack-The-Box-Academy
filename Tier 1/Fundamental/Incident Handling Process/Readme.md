@@ -16,7 +16,7 @@ One of the most widely used resources on incident handling is [NIST's Computer S
 
 This lifecycle describes how attacks manifest themselves.
 
-![[Cyber_kill_chain.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Incident%20Handling%20Process/Images/Cyber_kill_chain.png)
 
 The `recon` stage is the initial stage, and it involves the part where an attacker chooses their target.
 In the `weaponize` stage, the malware to be used for initial access is developed and embedded into some type of exploit or deliverable payload.
@@ -32,7 +32,7 @@ Our objective is to `stop an attacker from progressing further up the kill chain
 
 Just like the cyber kill chain, there are different stages, when responding to an incident, defined as the `incident handling process`. The `incident handling process` defines a capability for organizations to prepare, detect, and respond to malicious events.
 
-![[handling_process.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Incident%20Handling%20Process/Images/handling_process.webp)
 
 Incident handlers spend most of their time in the first two stages, `preparation` and `detection & analysis`.
 
@@ -163,7 +163,7 @@ The investigation starts based on the initially gathered (and limited) informati
 - Identification of new leads and impacted systems
 - Data collection and analysis from the new leads and impacted systems
 
- ![[investigation_new.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Fundamental/Incident%20Handling%20Process/Images/investigation_new.webp)
 
 In order to reach a conclusion, an investigation should be based on valid leads that have been discovered not only during this initial phase but throughout the entire investigation process.
 
