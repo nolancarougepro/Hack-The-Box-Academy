@@ -213,7 +213,7 @@ This means that we have automatically assigned the corresponding arguments to th
 
 Special variables use the [Internal Field Separator](https://bash.cyberciti.biz/guide/$IFS) (`IFS`) to identify when an argument ends and the next begins.
 
-![[special_var.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/special_var.png)
 
 In contrast to other programming languages, there is no direct differentiation and recognition between the types of variables in Bash like "`strings`," "`integers`," and "`boolean`." All contents of the variables are treated as string characters. It is important to note when declaring variables that they do `not` contain a `space`. Otherwise, the actual variable name will be interpreted as an internal function or a command.
 
@@ -240,29 +240,29 @@ To compare specific values with each other, we need elements that are called [co
 
 If we compare strings, then we know what we would like to have in the corresponding value.
 
-![[string_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/string_op.png)
 
 String comparison operators "`<` / `>`" works only within the double square brackets `[[ <condition> ]]`.
 
 Comparing integer numbers can be very useful for us if we know what values we want to compare.
 
-![[integer_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/integer_op.png)
 
 The file operators are useful if we want to find out specific permissions or if they exist.
 
-![[file_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/file_op.png)
 
 We get a boolean value "`false`" or "`true`" as a result with logical operators. Bash gives us the possibility to compare strings by using double square brackets `[[ <condition> ]]`. To get these boolean values, we can use the string operators.
 
 With logical operators, we can define several conditions within one.
 
-![[logical_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/logical_op.png)
 
 ## Arithmetic : 
 
 In Bash, we have seven different `arithmetic operators` we can work with. These are used to perform different mathematical operations or to modify certain integers.
 
-![[arithm_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/arithm_op.png)
 
 We can also calculate the length of the variable. Using this function `${#variable}`, every character gets counted, and we get the total number of characters in the variable.
 
@@ -387,7 +387,7 @@ First parameter Second parameter Third parameter
 
 When we start a new process, each `child process` (for example, a `function` in the executed script) returns a `return code` to the `parent process` (`bash shell` through which we executed the script) at its termination, informing it of the status of the execution.
 
-![[return_values.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Bash%20Scripting/Images/return_values.png)
 
 To get the value of a function back, we can use several methods like `return`, `echo`, or a `variable`. In the next example, we will see how to use "`$?`" to read the "`return code`," how to pass the arguments to the function and how to assign the result to a variable.
 
