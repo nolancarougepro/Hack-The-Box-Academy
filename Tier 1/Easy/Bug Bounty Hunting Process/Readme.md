@@ -18,7 +18,7 @@ If you want to become an established bug bounty hunter, you will have to strike 
 
 A bug bounty program usually consists of the following elements :
 
-![[bb_program.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Bug%20Bounty%20Hunting%20Process/Images/bb_program.png)
 
 One of the best online resources to identify bug bounty programs of your liking is [HackerOne's Directory](https://hackerone.com/directory/programs).
 
@@ -28,7 +28,7 @@ By documenting our findings clearly and concisely, we get straight to our point 
 
 The essential elements of a good bug report are (the element order can vary) :
 
-![[good_report.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Bug%20Bounty%20Hunting%20Process/Images/good_report.png)
 
 MITRE describes [Common Weaknesses Enumeration (CWE)](https://cwe.mitre.org/) as a community-developed list of software and hardware weakness types. It serves as a common language, a measuring stick for security tools, and as a baseline for weakness identification, mitigation, and prevention efforts.
 
@@ -38,9 +38,9 @@ We can use the [CVSS v3.1 Calculator](https://www.first.org/cvss/calculator/3.1)
 
 Find below some examples of using CVSS 3.1 to communicate the severity of vulnerabilities.
 
-![[ex_1.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Bug%20Bounty%20Hunting%20Process/Images/ex_1.png)
 
-![[ex_2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Bug%20Bounty%20Hunting%20Process/Images/ex_2.png)
 
 Find below some good report examples selected by HackerOne:
 
