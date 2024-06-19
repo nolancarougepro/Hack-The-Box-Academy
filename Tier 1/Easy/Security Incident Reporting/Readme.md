@@ -1,6 +1,6 @@
 Security incidents can emanate from a diverse array of sources and often manifest as detections, anomalies, or deviations from established baselines. There are primarily three key sources for incident identification :
 
-![[sources.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Security%20Incident%20Reporting/Images/sources.png)
 
 Upon identification of an incident, it is imperative to categorize it to facilitate the prioritization and allocation of resources for an effective response. This categorization also aids in comprehending the nature of the incident, thereby informing subsequent briefings to stakeholders.
 
@@ -63,7 +63,7 @@ Far from being a mere procedural formality, the reporting process is a strategic
 
 Let's consider the `Executive Summary` as the gateway to our report, designed to cater to a broad audience, including non-technical stakeholders. Since many stakeholders may only peruse the `Executive Summary`, it's imperative to nail this section. Here's a more granular breakdown of what should be encapsulated in the `Executive Summary` :
 
-![[exec_sum.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Security%20Incident%20Reporting/Images/exec_sum.png)
 
 ### Technical Analysis : 
 
