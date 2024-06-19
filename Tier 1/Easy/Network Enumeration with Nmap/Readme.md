@@ -57,7 +57,7 @@ Scan Network Range :
 NolanCarougeHTB@htb[/htb]$ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
 ```
 
-![[scan_opt.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scan_opt.png)
 
 This scanning method works only if the firewalls of the hosts allow it.
 
@@ -79,7 +79,7 @@ NolanCarougeHTB@htb[/htb]$ cat hosts.lst
 NolanCarougeHTB@htb[/htb]$ sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" " -f5
 ```
 
-![[scan_opt_2.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scan_opt_2.png)
 
 It can also happen that we only need to scan a small part of a network. An alternative to the method we used last time is to specify multiple IP addresses.
 
@@ -95,7 +95,7 @@ Before we scan a single host for open ports and its services, we first have to d
 NolanCarougeHTB@htb[/htb]$ sudo nmap 10.129.2.18 -sn -oA host 
 ```
 
-![[scan_opt_3.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scan_opt_3.png)
 
 If we disable port scan (`-sn`), Nmap automatically ping scan with `ICMP Echo Requests` (`-PE`). Once such a request is sent, we usually expect an `ICMP reply` if the pinging host is alive.
 
@@ -105,7 +105,7 @@ We can confirm this with the "`--packet-trace`" option. To ensure that ICMP echo
 NolanCarougeHTB@htb[/htb]$ sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace 
 ```
 
-![[scan_opt_4.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scan_opt_4.png)
 
 Another way to determine why Nmap has our target marked as "alive" is with the "`--reason`" option.
 
@@ -113,7 +113,7 @@ Another way to determine why Nmap has our target marked as "alive" is with the "
 NolanCarougeHTB@htb[/htb]$ sudo nmap 10.129.2.18 -sn -oA host -PE --reason 
 ```
 
-![[scan_opt_5.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scan_opt_5.png)
 
 More strategies about host discovery can be found at : [https://nmap.org/book/host-discovery-strategies.html](https://nmap.org/book/host-discovery-strategies.html)
 
@@ -128,7 +128,7 @@ The information we need includes :
 
 There are a total of 6 different states for a scanned port we can obtain :
 
-![[scanned_port.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scanned_port.png)
 
 By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
 
@@ -186,7 +186,7 @@ We can also increase the `verbosity level` (`-v` / `-vv`), which will show us th
 
 Nmap Scripting Engine (`NSE`) is another handy feature of `Nmap`. It provides us with the possibility to create scripts in Lua for interaction with certain services. There are a total of 14 categories into which these scripts can be divided :
 
-![[scripts.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Easy/Network%20Enumeration%20with%20Nmap/Images/scripts.png)
 
 We have several ways to define the desired scripts in `Nmap`.
 
