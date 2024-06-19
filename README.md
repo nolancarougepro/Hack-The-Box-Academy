@@ -40,13 +40,13 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
     - Incident Handling Process (✓)
     - Penetration Testing Process (✓)
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201/Easy)
-    - Bug Bounty Hunting Process
+    - Bug Bounty Hunting Process (✓)
     - Introduction to Bash Scripting (✓)
     - Introduction to C#
     - Introduction to Python 3 (✓)
     - Introduction to Windows Command Line (✓)
-    - Network Enumeration with Nmap
-    - Security Incident Reporting
+    - Network Enumeration with Nmap (✓)
+    - Security Incident Reporting (✓)
   - [Medium](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201/Medium)
     - DNS Enumeration Using Python
     - Password Attacks
