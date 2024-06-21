@@ -17,7 +17,7 @@ Within the IT industry as a whole, a `payload` can be defined in a few different
 
 Every operating system has a shell, and to interact with it, we must use an application known as a `terminal emulator`. Here are some of the most common terminal emulators :
 
-![[terminal_emulator.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/terminal_emulator.png)
 
 Let's use our `Parrot OS` Pwnbox to further explore the anatomy of a shell. open the `MATE` terminal emulator.
 
@@ -43,7 +43,7 @@ In many cases, we will be working to establish a shell on a system on a local or
 
 With a bind shell, the `target` system has a listener started and awaits a connection from a pentester's system (attack box).
 
-![[bindshell.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/bindshell.webp)
 
 As seen in the image, we would connect directly with the `IP address` and `port` listening on the target. There can be many challenges associated with getting a shell this way. Here are some to consider :
 
@@ -82,7 +82,7 @@ As mentioned earlier in this section, it is also good to remember that the bind 
 
 With a `reverse shell`, the attack box will have a listener running, and the target will need to initiate the connection.
 
-![[reverseshell.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/reverseshell.webp)
 
 We will often use this kind of shell as we come across vulnerable systems because it is likely that an admin will overlook outbound connections, giving us a better chance of going undetected.
 
@@ -252,7 +252,7 @@ Let's look at one module, in particular, to understand it within the context of 
 
 `56 exploit/windows/smb/psexec`
 
-![[exploit_56.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/exploit_56.png)
 
 ```shell
 msf6 > use 56
@@ -495,7 +495,7 @@ dir
 
 Over the last few years, several vulnerabilities in the Windows operating system and their corresponding attacks are some of the most exploited vulnerabilities of our time. Let's discuss those for a minute :
 
-![[windows_attack.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/windows_attack.png)
 
 This module assumes you have already performed your host enumeration phase and understand what services are commonly seen on hosts. 
 
@@ -521,7 +521,7 @@ When it comes to creating payloads for Windows hosts, we have plenty of options 
 
 We have plenty of good options for dealing with generating payloads to use against Windows hosts. The table below lays out some of our options. However, this is not an exhaustive list, and new resources come out daily.
 
-![[ressource.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/ressource.png)
 
 Besides the vectors of web-drive-by, phishing emails, or dead drops, Windows hosts can provide us with several other avenues of payload delivery. The list below includes some helpful tools and protocols for use while attempting to drop a payload on a target.
 
@@ -1080,7 +1080,7 @@ Our goal is to change the `content-type` to bypass the file type restriction in 
 
 With Burp open and our web browser proxy settings properly configured, we can now upload the PHP web shell.
 
-![[burp.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/burp.webp)
 
 We will change Content-type from `application/x-php` to `image/gif`. This will essentially "trick" the server and allow us to upload the .php file, bypassing the file type restriction.
 
@@ -1102,7 +1102,7 @@ The `ATT&CK Framework` as defined by MITRE, is "`a globally-accessible knowledge
 
 Keeping the framework in mind, three of the most notable techniques we can tie to Shells & Payloads are listed below in the table with descriptions.
 
-![[mitre.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/Shells%20%2526%20Payloads/Images/mitre.png)
 
 Events To Watch For :
 
