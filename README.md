@@ -48,9 +48,9 @@ Hack The Box Academy is an online platform dedicated to learning cybersecurity t
     - Network Enumeration with Nmap (✓)
     - Security Incident Reporting (✓)
   - [Medium](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%201/Medium)
-    - DNS Enumeration Using Python
+    - DNS Enumeration Using Python (✓)
     - Password Attacks
-    - Shells & Payloads
+    - Shells & Payloads (✓)
 - **[Tier 2](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%202)**
   - [Easy](https://github.com/nolancarougepro/Hack-The-Box-Academy/tree/main/Tier%202/Easy)
     - Cross-Site Scripting (XSS)

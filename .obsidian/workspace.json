@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f827c2ca04cd62cc",
+        "id": "43461f6993e8bb4b",
         "type": "tabs",
         "children": [
           {
-            "id": "69bc6d919380acaa",
+            "id": "ac4f922c181fc766",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Tier 1/Medium/Shells & Payloads/Readme.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Tier 1/Medium/Shells & Payloads/Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Tier 1/Medium/Shells & Payloads/Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Tier 1/Medium/Shells & Payloads/Readme.md"
               }
             }
           }
@@ -147,35 +147,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "69bc6d919380acaa",
+  "active": "9f3dde8b475765ff",
   "lastOpenFiles": [
+    "Tier 1/Medium/Shells & Payloads/Images/mitre.png",
+    "Tier 1/Medium/Shells & Payloads/Images/burp.webp",
+    "README.md",
+    "Tier 1/Medium/Shells & Payloads/Readme.md",
+    "Tier 1/Medium/Shells & Payloads/Images/ressource.png",
+    "Tier 1/Medium/Shells & Payloads/Images/windows_attack.png",
+    "Tier 1/Medium/Shells & Payloads/Images/exploit_56.png",
+    "Tier 1/Medium/Shells & Payloads/Images/reverseshell.webp",
+    "Tier 1/Medium/Shells & Payloads/Images/bindshell.webp",
+    "Tier 1/Medium/Shells & Payloads/Images",
+    "Tier 1/Medium/Shells & Payloads/Images/terminal_emulator.png",
+    "Tier 1/Medium/Shells & Payloads/Shells_Payloads_Module_Cheat_Sheet.pdf",
+    "Tier 1/Medium/DNS Enumeration Using Python/Readme.md",
+    "Tier 1/Medium/DNS Enumeration Using Python/Images/parser.png",
+    "Pasted image 20240620114743.png",
+    "Tier 1/Medium/DNS Enumeration Using Python/Images/pep8.png",
+    "Tier 1/Medium/DNS Enumeration Using Python/Images",
     "Tier 1/Easy/Security Incident Reporting/Readme.md",
-    "exec_sum.png",
-    "sources.png",
     "Tier 1/Easy/Security Incident Reporting/Images",
     "Tier 1/Easy/Bug Bounty Hunting Process/Readme.md",
-    "Tier 1/Easy/Bug Bounty Hunting Process/Images/ex_2.png",
-    "Tier 1/Easy/Bug Bounty Hunting Process/Images/ex_1.png",
-    "Tier 1/Easy/Bug Bounty Hunting Process/Images/good_report.png",
     "Tier 1/Easy/Bug Bounty Hunting Process/Images",
-    "Tier 1/Easy/Bug Bounty Hunting Process/Images/bb_program.png",
     "Tier 1/Easy/Network Enumeration with Nmap/Readme.md",
-    "Tier 1/Easy/Network Enumeration with Nmap/Images/scripts.png",
-    "Tier 1/Easy/Network Enumeration with Nmap/Images/scan_opt.png",
-    "Tier 1/Easy/Network Enumeration with Nmap/Images/scanned_port.png",
-    "Tier 1/Easy/Network Enumeration with Nmap/Images/scan_opt_5.png",
     "Tier 1/Easy/Network Enumeration with Nmap/Images",
     "Tier 0/Medium/SQL Injection Fundamentals/README.md",
     "Tier 1/Easy/Network Enumeration with Nmap/Network_Enumeration_With_Nmap_Module_Cheat_Sheet.pdf",
-    "README.md",
     "Tier 1/Easy/Introduction to Windows Command Line/Readme.md",
     "Tier 1/Easy/Introduction to Windows Command Line/Resources/quick-recon 1.psm1",
     "HTB Academy Student Transcript.pdf",
     "HTB Academy Student Transcript-2.pdf",
-    "Tier 1/Easy/Introduction to Windows Command Line/Introduction_To_Windows_Command_Line_Module_Cheat_Sheet.pdf",
     "Tier 1/Easy/Introduction to Bash Scripting/Readme.md",
-    "Tier 1/Easy/Introduction to Windows Command Line/Images",
-    "Tier 1/Easy/Introduction to Bash Scripting/Images",
     "Tier 1/Easy/Introduction to Python 3/Readme.md",
     "Tier 1/Fundamental/Penetration Testing Process/Readme.md",
     "Tier 1/Fundamental/Incident Handling Process/Readme.md",
@@ -191,9 +194,6 @@
     "Tier 0/Medium/SQL Injection Fundamentals/Readme.md",
     "Tier 0/Easy/Vulnerability Assessment/Readme.md",
     "Tier 0/Easy/Using the Metasploit Framework/Readme.md",
-    "Tier 0/Easy/JavaScript Deobfuscation/Readme.md",
-    "Tier 0/Easy/Attacking Web Applications with Ffuf/Readme.md",
-    "Tier 0/Easy/Vulnerability Assessment/Vulnerability Assessment.md",
-    "Tier 0/Easy/Using the Metasploit Framework/Using the Metasploit Framework.md"
+    "Tier 0/Easy/JavaScript Deobfuscation/Readme.md"
   ]
 }
