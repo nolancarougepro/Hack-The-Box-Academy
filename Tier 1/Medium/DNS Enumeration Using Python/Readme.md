@@ -46,7 +46,7 @@ A domain is used to give real names to computer's IP addresses and, at the same 
 │   └── ...
 ```
 
-![[tooldev-dns.webp]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/DNS%20Enumeration%20Using%20Python/Images/tooldev-dns.webp)
 
 Each domain consists of at least two parts:
 
@@ -109,7 +109,7 @@ An `AXFR` is a complete transfer of all entries of the zone file. In contrast to
 
 DNS works with many different records. DNS records are instructions that are located on authoritative DNS servers and contain information about a domain. These entries are written in the DNS syntax that gives the DNS servers the appropriate instructions. Here are the most common DNS records :
 
-![[records.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/DNS%20Enumeration%20Using%20Python/Images/records.png)
 
 There are many tools and resources we can work with to send queries to the DNS servers. For example, we can use tools like:
 
@@ -195,13 +195,13 @@ NolanCarougeHTB@htb[/htb]$ dig axfr inlanefreight.com @10.129.2.67
 
 The following guidelines for clean programming will enable us to distinguish clear code from bad code and convert bad code into good code. This becomes especially important when we work with different code or when we need to adapt or modify it. The following five guidelines alone will help us keep our code simple, structured, and efficient.
 
-![[guideline.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/DNS%20Enumeration%20Using%20Python/Images/guideline.png)
 
 There are guidelines developed especially for Python, known as the `Python Enhancement Proposal` (`PEP8`). [PEP8](https://www.python.org/dev/peps/pep-0008/) is a document that contains `guidelines` and `best practices` for writing Python code and was written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan.
 
 Writing readable code is crucial because other people who are not familiar with our `coding style` need to read and understand our code. If we have guidelines that we follow and recognize, others will also find our code easier to read.
 
-![[pep8.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/DNS%20Enumeration%20Using%20Python/Images/pep8.png)
 
 ## Python Modules : 
 
@@ -397,7 +397,7 @@ if __name__ == "__main__":
 
 After initializing the parser, we can define the corresponding parameters, which we will define with our script's respective options. For this, we use the `add_argument()` method of the `ArgumentParser`. This method provides us with some parameters that we can use to define the option.
 
-![[parser.png]]
+![](https://github.com/nolancarougepro/Hack-The-Box-Academy/blob/main/Tier%201/Medium/DNS%20Enumeration%20Using%20Python/Images/parser.png)
 
 Next, we define the target `domain` parameters and the `nameservers` on which we want to test the zone transfer.
 
